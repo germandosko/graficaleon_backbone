@@ -1,0 +1,9 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['contact'] = template({"compiler":[5,">= 2.0.0"],"main":function(depth0,helpers,partials,data) {
+  return "<div id=\"contact\">\n	<div id=\"contact_right\">\n		<h2>FORMULARIO CONTACTO</h2>\n		<div id=\"line\"></div>\n		<form action=\"contact.php\" method=\"post\" id=\"contactForm\">\n			<fieldset>\n				<label for=\"name\" class=\"black\">Nombre</label>\n				<input type=\"text\" name=\"name\" id=\"name\" class=\"shadow\" required/>\n				<label for=\"email\" class=\"black\">E-mail</label>\n				<input type=\"email\" name=\"email\" id=\"email\" class=\"shadow\" required/>\n				<label for=\"telephone\" class=\"black\">Tel&eacute;fono</label>\n				<input type=\"text\" name=\"telephone\" id=\"telephone\" class=\"shadow\" />\n				<label for=\"question\" class=\"black\">Consulta</label>\n				<textarea name=\"question\" id=\"question\" class=\"shadow\" required></textarea>\n				<input type=\"submit\" value=\"Enviar\" />\n			</fieldset>						\n		</form>\n	</div>\n	<div class=\"clearfix\"></div>\n</div>\n";
+  },"useData":true});
+templates['home'] = template({"compiler":[5,">= 2.0.0"],"main":function(depth0,helpers,partials,data) {
+  return "<div>\n	<h2 class=\"title_company\">Quienes Somos?</h2>\n	<p class=\"description_company\">Somos un grupo de jovenes profesionales dedicados a brindar a nuestros clientes soluciones efectivas en el &aacute;rea de la comunicaci&oacute;n y el dise&ntilde;o. Conformamos un equipo de trabajo responsable en el manejo de nuestras tareas y nos comprometemos con los requerimientos de nuestros clientes, trabajando en conjunto para poder brindarles soluciones gr&aacute;ficas de alto impacto.</p>	\n</div>";
+  },"useData":true});
+})();
